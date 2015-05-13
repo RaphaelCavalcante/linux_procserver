@@ -1,0 +1,128 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'slack-for-linux',
+1 verbose cli   '-g' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose cache add [ 'slack-for-linux', null ]
+5 verbose cache add name=undefined spec="slack-for-linux" args=["slack-for-linux",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'slack-for-linux',
+6 verbose parsed url   path: 'slack-for-linux',
+6 verbose parsed url   href: 'slack-for-linux' }
+7 silly lockFile 3bfb7779-slack-for-linux slack-for-linux
+8 verbose lock slack-for-linux /home/rhounsell/.npm/3bfb7779-slack-for-linux.lock
+9 silly lockFile 3bfb7779-slack-for-linux slack-for-linux
+10 silly lockFile 3bfb7779-slack-for-linux slack-for-linux
+11 verbose addNamed [ 'slack-for-linux', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 94a138f2-slack-for-linux slack-for-linux@
+14 verbose lock slack-for-linux@ /home/rhounsell/.npm/94a138f2-slack-for-linux.lock
+15 silly addNameRange { name: 'slack-for-linux', range: '*', hasData: false }
+16 verbose url raw slack-for-linux
+17 verbose url resolving [ 'https://registry.npmjs.org/', './slack-for-linux' ]
+18 verbose url resolved https://registry.npmjs.org/slack-for-linux
+19 info trying registry request attempt 1 at 15:38:38
+20 verbose etag "C9S6UET69ORR17QQAY4NW14PZ"
+21 http GET https://registry.npmjs.org/slack-for-linux
+22 http 304 https://registry.npmjs.org/slack-for-linux
+23 silly registry.get cb [ 304,
+23 silly registry.get   { date: 'Wed, 06 May 2015 19:38:40 GMT',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     'last-modified': 'Wed, 06 May 2015 19:38:40 GMT',
+23 silly registry.get     'cache-control': 'max-age=60',
+23 silly registry.get     etag: '"C9S6UET69ORR17QQAY4NW14PZ"',
+23 silly registry.get     age: '0',
+23 silly registry.get     connection: 'keep-alive',
+23 silly registry.get     'x-served-by': 'cache-atl6232-ATL',
+23 silly registry.get     'x-cache': 'MISS',
+23 silly registry.get     'x-cache-hits': '0',
+23 silly registry.get     'x-timer': 'S1430941120.905636,VS0,VE26',
+23 silly registry.get     vary: 'Accept' } ]
+24 verbose etag slack-for-linux from cache
+25 silly addNameRange number 2 { name: 'slack-for-linux', range: '*', hasData: true }
+26 silly addNameRange versions [ 'slack-for-linux',
+26 silly addNameRange   [ '1.1.0', '1.1.1', '1.2.0', '1.2.1', '1.3.0', '1.4.0', '1.4.1' ] ]
+27 verbose addNamed [ 'slack-for-linux', '1.4.1' ]
+28 verbose addNamed [ '1.4.1', '1.4.1' ]
+29 silly lockFile 0ef2e6de-slack-for-linux-1-4-1 slack-for-linux@1.4.1
+30 verbose lock slack-for-linux@1.4.1 /home/rhounsell/.npm/0ef2e6de-slack-for-linux-1-4-1.lock
+31 silly lockFile 0ef2e6de-slack-for-linux-1-4-1 slack-for-linux@1.4.1
+32 silly lockFile 0ef2e6de-slack-for-linux-1-4-1 slack-for-linux@1.4.1
+33 silly lockFile 94a138f2-slack-for-linux slack-for-linux@
+34 silly lockFile 94a138f2-slack-for-linux slack-for-linux@
+35 silly resolved [ { name: 'slack-for-linux',
+35 silly resolved     version: '1.4.1',
+35 silly resolved     description: 'Slack client for linux',
+35 silly resolved     keywords: [ 'slack', 'linux', 'node-webkit' ],
+35 silly resolved     homepage: 'https://github.com/wlaurance/slack-for-linux',
+35 silly resolved     bugs: { url: 'https://github.com/wlaurance/slack-for-linux/issues' },
+35 silly resolved     author: { name: 'Will Laurance', url: 'https://github.com/wlaurance' },
+35 silly resolved     repository:
+35 silly resolved      { type: 'git',
+35 silly resolved        url: 'git://github.com/wlaurance/slack-for-linux' },
+35 silly resolved     dependencies:
+35 silly resolved      { bower: '^1.3.12',
+35 silly resolved        grunt: '^0.4.5',
+35 silly resolved        'grunt-cli': '^0.1.13',
+35 silly resolved        'grunt-node-webkit-builder': '^1.0.2' },
+35 silly resolved     engines: { node: '>=0.10.0' },
+35 silly resolved     os: [ 'linux' ],
+35 silly resolved     scripts: { postinstall: './install.sh', test: 'grunt lint' },
+35 silly resolved     bin: { 'slack-for-linux': './run.js' },
+35 silly resolved     devDependencies:
+35 silly resolved      { 'grunt-contrib-jshint': '^0.10.0',
+35 silly resolved        'grunt-jscs': '^1.1.0',
+35 silly resolved        'grunt-lintspaces': '^0.6.0' },
+35 silly resolved     readme: 'slack-for-linux [![Build Status](https://travis-ci.org/wlaurance/slack-for-linux.svg?branch=master)](https://travis-ci.org/wlaurance/slack-for-linux)\n=============\n\nSlack client for linux 64. Uses Node Webkit\n\nIf you are still on a 32 bit version of linux, it is easy to change the install\nscript to support your platform.\n\nInstalling\n==========\n\n[Install Node](http://nodejs.org/download/) Skip if you already have node.\n\n```\nnpm install slack-for-linux -g\n```\n\nIf you have setup correctly, the above command will install the package\nsomewhere in your path.\n\nThen you can run your client from your terminal of choice.\n\n```\nslack-for-linux\n```\n\nWhy\n===\n\nForgot my mac charger for a trip, and only had a linux laptop.\nI wanted to make an app using [node-webkit](https://github.com/rogerwang/node-webkit).\n\nYou should probably just use the chrome extension from Slack. But\nif you are not a chrome user, this could be something worth while.\n\nRunning and Developing\n======================\n\n####Clone the repo\n\n```\ngit clone git@github.com:wlaurance/slack-for-linux.git && cd slack-for-linux\n```\n\n####Install deps\n\n```\nnpm install\n```\n\n####Run It\n\n```\n./run.js\n```\n\nIssues\n======\n[JBKahn](https://github.com/JBKahn) Pointed out that libudev.so differs on different\nmachines. If you run into\n\n```\n./resources/node-webkit/Linux64/nw: error while loading shared libraries: libudev.so.0: cannot open shared object file: No such file or directory\n```\n\nGive [Issue #1](https://github.com/wlaurance/slack-for-linux/issues/1) a look.\n',
+35 silly resolved     readmeFilename: 'README.md',
+35 silly resolved     _id: 'slack-for-linux@1.4.1',
+35 silly resolved     _from: 'slack-for-linux@' } ]
+36 info install slack-for-linux@1.4.1 into /usr/local/lib
+37 info installOne slack-for-linux@1.4.1
+38 info /usr/local/lib/node_modules/slack-for-linux unbuild
+39 verbose tar unpack /home/rhounsell/.npm/slack-for-linux/1.4.1/package.tgz
+40 silly lockFile b1b8cb97-lib-node-modules-slack-for-linux tar:///usr/local/lib/node_modules/slack-for-linux
+41 verbose lock tar:///usr/local/lib/node_modules/slack-for-linux /home/rhounsell/.npm/b1b8cb97-lib-node-modules-slack-for-linux.lock
+42 silly lockFile 09119167-lack-for-linux-1-4-1-package-tgz tar:///home/rhounsell/.npm/slack-for-linux/1.4.1/package.tgz
+43 verbose lock tar:///home/rhounsell/.npm/slack-for-linux/1.4.1/package.tgz /home/rhounsell/.npm/09119167-lack-for-linux-1-4-1-package-tgz.lock
+44 silly gunzTarPerm modes [ '755', '644' ]
+45 error Error: EACCES, mkdir '/usr/local/lib/node_modules'
+45 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules']
+45 error   errno: 3,
+45 error   code: 'EACCES',
+45 error   path: '/usr/local/lib/node_modules',
+45 error   fstream_type: 'Directory',
+45 error   fstream_path: '/usr/local/lib/node_modules/slack-for-linux',
+45 error   fstream_class: 'DirWriter',
+45 error   fstream_stack:
+45 error    [ '/usr/lib/nodejs/fstream/lib/writer.js:171:23',
+45 error      '/usr/lib/nodejs/mkdirp/index.js:37:53',
+45 error      'Object.oncomplete (fs.js:107:15)' ] }
+46 error Please try running this command again as root/Administrator.
+47 error System Linux 3.13.0-52-generic
+48 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "slack-for-linux" "-g"
+49 error cwd /home/rhounsell/QtCreatorProjects/pstree
+50 error node -v v0.10.25
+51 error npm -v 1.3.10
+52 error path /usr/local/lib/node_modules
+53 error fstream_path /usr/local/lib/node_modules/slack-for-linux
+54 error fstream_type Directory
+55 error fstream_class DirWriter
+56 error code EACCES
+57 error errno 3
+58 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules'
+59 error fstream_stack /usr/lib/nodejs/fstream/lib/writer.js:171:23
+59 error fstream_stack /usr/lib/nodejs/mkdirp/index.js:37:53
+59 error fstream_stack Object.oncomplete (fs.js:107:15)
+60 verbose exit [ 3, true ]
